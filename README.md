@@ -47,6 +47,7 @@ python3 extractor.py
     ls -lh recuperado.exe
   ```
 
-  Si todo salio bien deberias estar viendo el hash
+  Si todo salio bien deberias estar viendo el ejecutable, hash y permisos
+  
    
 
