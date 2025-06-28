@@ -1,7 +1,7 @@
 # XLMRat
 # Como recuperar el hash del reto XLMRat de ciberdefenders
 
-1. En el wireshark vamos a la **`file`** buscamos **`Export Objects`** escogemos el protocolo en este caso **`HTTP`** selecionamos el archivo a descargar para este ejecicio es **`mdm.jpg`** confirmamos con **`save`**
+1. En el wireshark vamos a **`file`** buscamos **`Export Objects`** escogemos el protocolo en este caso **`HTTP`** selecionamos el archivo a descargar para este ejecicio es **`mdm.jpg`** confirmamos con **`save`**
 2. El archivo **`mdm.jpg`** contiene texto con el hex codificado, puedes extraerlo directamente así:
 ```bash
 cat mdm.jpg | tr -cd '0-9A-Fa-f_' > hex.txt
