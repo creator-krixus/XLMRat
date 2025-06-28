@@ -4,7 +4,7 @@
 1. En el wireshark vamos a **`file`** buscamos **`Export Objects`** escogemos el protocolo en este caso **`HTTP`** selecionamos el archivo a descargar para este ejecicio es **`mdm.jpg`** confirmamos con **`save`**
 2. El archivo **`mdm.jpg`** contiene texto con el hex codificado, puedes extraerlo directamente así:
 ```bash
-cat mdm.jpg | tr -cd '0-9A-Fa-f_' > hex.txt
+grep -oP '(?<=\$hexString_bbb = ").*?(?=")' mdm.jpg > hex.txt
 ```
 3. Creamos una funcion en python **`extractor.py`**
 ```bash
